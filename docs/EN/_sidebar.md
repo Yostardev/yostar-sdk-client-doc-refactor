@@ -1,27 +1,27 @@
-* Unity3D
 
-   * [Update History](/EN/Unity3D/2.1.0/update_commond)
-   * [Overview](/EN/Unity3D/2.1.0/summary)
-   * [SDK Integration](/EN/Unity3D/2.1.0/sdk_integration)
-   * [Configure Project Parameters](/EN/Unity3D/2.1.0/edit_resources)
-   * [Interface Design Description](/EN/Unity3D/2.1.0/implementation_comond)
-      * [1、Required Functionality](/EN/Unity3D/2.1.0/must_commond)
-      * [2、Account Functionality](/EN/Unity3D/2.1.0/account_commont)
-      * [3、Binding Functionality](/EN/Unity3D/2.1.0/link_commont)
-      * [4、Payment Functionality](/EN/Unity3D/2.1.0/buy_commond)
-      * [5、Other Functionalities](/EN/Unity3D/2.1.0/others_commond)
-      * [6、Error Code](/EN/Unity3D/2.1.0/errorcode)
-    
+* Unity3D
+  * [版本记录](/ZH/update_commond)
+  * [概述](/ZH/Unity3D/sdk_summary)
+  * [接入前准备](/ZH/Unity3D/sdk_prepare)
+  * [SDK集成](/ZH/Unity3D/sdk_integration)
+  * [接口说明](/ZH/Unity3D/sdk_init)
+    * [1、SDK初始化](/ZH/Unity3D/sdk_init)
+    * [2、账号功能](/ZH/Unity3D/sdk_account)
+    * [3、支付功能](/ZH/Unity3D/sdk_pay)
+    * [4、客诉功能](/ZH/Unity3D/sdk_aihelp)
+    * [5、数据埋点功能](/ZH/Unity3D/sdk_analytical)
+    * [6、其他功能](/ZH/Unity3D/sdk_other)
+    * [7、错误码](/ZH/sdk_errorcode)
+    * [8、常见问题](/ZH/sdk_qa)
+
+
+* Ue4
+   * [版本记录](/ZH/Unity3D/2.0.5/update_commond)
+
 * Android
-   * [Introduction](/EN/Android/summary)
-   * [Implementation](/EN/Android/sdk_implementation)
-   * [Edit Project Setting Values](/EN/Android/edit_resources)
-   * [API Instruction](/EN/Android/Interface_design_description)
+   * [版本记录](/ZH/Unity3D/2.0.5/update_commond)
 
 * iOS
-    * [Introduction](/EN/iOS/1.summary)
-    * [Implementation](/EN/iOS/2.AccessProcess)
-    * [Edit Project Setting Values](/EN/iOS/3.ConfigProjectParam)
-    * [API Instruction](/EN/iOS/4.SDKUsage)
-    
-[Error Code Document](/EN/errorcode)
+  * [版本记录](/ZH/Unity3D/2.0.5/update_commond)
+
+
