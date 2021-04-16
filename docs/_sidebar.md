@@ -16,12 +16,12 @@
 
 
 * Ue4
-   * [版本记录](/ZH/Unity3D/2.0.5/update_commond)
+   * [版本记录](/ZH/update_commond)
 
 * Android
-   * [版本记录](/ZH/Unity3D/2.0.5/update_commond)
+   * [版本记录](/ZH/update_commond)
 
 * iOS
-  * [版本记录](/ZH/Unity3D/2.0.5/update_commond)
+   * [版本记录](/ZH/update_commond)
 
 
