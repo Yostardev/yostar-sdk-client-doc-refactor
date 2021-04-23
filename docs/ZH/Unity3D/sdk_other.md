@@ -19,7 +19,7 @@
 
 - #### 函数定义
     ```cs
-    public void ShowAnnouncement()
+    public void ShowSettings()
     ```
 - #### 调用示例
 
@@ -33,7 +33,7 @@
     }
 
     AirisdkEvent.Instance.ClearSDKCacheEvent += OnClearCacheRespone;
-    AiriSDK.Instance.ShowAnnouncement();
+    AiriSDK.Instance.ShowSettings();
     ```
 
 ### 3、打开设置界面(用户已登录)
