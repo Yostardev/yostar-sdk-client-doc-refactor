@@ -19,7 +19,7 @@
 
 - #### 调用示例
     ```cs
-    AiriSDK.Instance.showAgreement(Agreement.AGREEMENT_REFUND_EXPLAIN);
+    YoStarSDK.Instance.showAgreement(Agreement.AGREEMENT_REFUND_EXPLAIN);
     ```
 
 
@@ -55,8 +55,8 @@
         }
     }
 
-    AirisdkEvent.Instance.PayEvent += OnPayRespone;//Important!!!
-    AiriSDK.Instance.Pay("gold_100", PayServerTag.Test, "game_order_001");
+    YoStarSDKEvent.Instance.PayEvent += OnPayRespone;//Important!!!
+    YoStarSDK.Instance.Pay("gold_100", PayServerTag.Test, "game_order_001");
     ```
 
     PayRet 属性名|参数说明|备注

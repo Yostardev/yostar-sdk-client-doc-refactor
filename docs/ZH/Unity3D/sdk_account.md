@@ -26,8 +26,8 @@
       }
     }
 
-    AirisdkEvent.Instance.LoginEvent += OnLoginRespone; // Important!!!
-    AiriSDK.Instance.Login();
+    YoStarSDKEvent.Instance.LoginEvent += OnLoginRespone; // Important!!!
+    YoStarSDK.Instance.Login();
 ```
 
     | LoginRet    | 参数说明 | 备注 |
@@ -50,7 +50,7 @@
 - #### 调用示例
 
     ```cs
-    AiriSDK.Instance.ShowAccountCenter();
+    YoStarSDK.Instance.ShowAccountCenter();
     ```
 
 
@@ -67,7 +67,7 @@
 
 - #### 调用示例
     ```cs
-    AiriSDK.Instance.ShowTranscode();
+    YoStarSDK.Instance.ShowTranscode();
     ```
 
 
@@ -95,8 +95,8 @@
       }
     }
 
-    AirisdkEvent.Instance.LinkEvent += OnLinkRespone; //Important!!!
-    AiriSDK.Instance.LinkSocial(LinkPlatform.FACEBOOK);
+    YoStarSDKEvent.Instance.LinkEvent += OnLinkRespone; //Important!!!
+    YoStarSDK.Instance.LinkSocial(LinkPlatform.FACEBOOK);
 ```
 
     | LinkRet属性    | 参数说明 | 备注 |
@@ -134,8 +134,8 @@
         }
     }
 
-    AirisdkEvent.Instance.UnLinkEvent += OnUnLinkRespone; //Important!!!
-    AiriSDK.Instance.UnlinkSocial(LinkPlatform.FACEBOOK);
+    YoStarSDKEvent.Instance.UnLinkEvent += OnUnLinkRespone; //Important!!!
+    YoStarSDK.Instance.UnlinkSocial(LinkPlatform.FACEBOOK);
     ```
 
     UnLinkRet 属性名|参数说明|备注
@@ -167,8 +167,8 @@
         }
     }
 
-    AirisdkEvent.Instance.DeleteAccountEvent += OnDeletAccountResponse; //Important!!!
-    AiriSDK.Instance.DeleteAccount();
+    YoStarSDKEvent.Instance.DeleteAccountEvent += OnDeletAccountResponse; //Important!!!
+    YoStarSDK.Instance.DeleteAccount();
     ```
 
 

@@ -7,12 +7,8 @@
 - #### 函数定义
 
   ```cs
-    public bool Init(PayStore payStore)
+    public bool Init()
   ```
-
-    入参名称|入参说明|备注
-    ---|:--:|:--|
-    payStore|初始化渠道|iOS: PayStore.appstore <br/>Android:  PayStore.googleplay|
 
 <br/>
 
@@ -28,9 +24,9 @@
           }
       }
 
-      AirisdkEvent.Instance.InitEvent += OnInitRespone;
+      YoStarSDKEvent.Instance.InitEvent += OnInitRespone;
 
-      AiriSDK.Instance.Init(PayStore.appstore);
+      YoStarSDK.Instance.Init();
   ```
 
     InitRet 属性名|参数说明|备注

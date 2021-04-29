@@ -16,5 +16,5 @@
     ```cs
     Dictionary<string, string> dic = new Dictionary<string, string>();
     dic.Add("uid", "1234543");
-    AiriSDK.Instance.UserEventUpload("user_login_event", dic);
+    YoStarSDK.Instance.UserEventUpload("user_login_event", dic);
     ```

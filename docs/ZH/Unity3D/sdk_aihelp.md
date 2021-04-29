@@ -12,7 +12,7 @@
 - #### 调用示例
 
     ```cs
-    AiriSDK.Instance.ShowAiHelpFAQs();
+    YoStarSDK.Instance.ShowAiHelpFAQs();
     ```
 
 
@@ -38,7 +38,7 @@
 - #### 调用示例
 
     ```cs
-    AiriSDK.Instance.ShowSettings(servierId,uid,name, "1998-08-25", 100, new string[]{"tag1","tag2"});
+    YoStarSDK.Instance.ShowSettings(servierId,uid,name, "1998-08-25", 100, new string[]{"tag1","tag2"});
     ```
 
 

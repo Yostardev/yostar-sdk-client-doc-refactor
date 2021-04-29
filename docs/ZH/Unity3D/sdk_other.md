@@ -8,7 +8,7 @@
 - #### 调用示例
 
     ```cs
-    AiriSDK.Instance.ShowAnnouncement();
+    YoStarSDK.Instance.ShowAnnouncement();
     ```
 
 ### 2、打开设置界面(用户未登录)
@@ -32,8 +32,8 @@
       }
     }
 
-    AirisdkEvent.Instance.ClearSDKCacheEvent += OnClearCacheRespone;
-    AiriSDK.Instance.ShowSettings();
+    YoStarSDKEvent.Instance.ClearSDKCacheEvent += OnClearCacheRespone;
+    YoStarSDK.Instance.ShowSettings();
     ```
 
 ### 3、打开设置界面(用户已登录)
@@ -57,8 +57,8 @@
 - #### 调用示例
 
     ```cs
-    AirisdkEvent.Instance.ClearSDKCacheEvent += OnClearCacheRespone;
-    AiriSDK.Instance.ShowSettings("servierId","uid", "name", "1998-08-25", 100, new string[0]);
+    YoStarSDKEvent.Instance.ClearSDKCacheEvent += OnClearCacheRespone;
+    YoStarSDK.Instance.ShowSettings("servierId","uid", "name", "1998-08-25", 100, new string[0]);
     ```
 
 ### 4、清理SDK缓存
@@ -73,7 +73,7 @@
 - #### 调用示例
 
     ```cs
-    AiriSDK.Instance.ClearSDKCache();
+    YoStarSDK.Instance.ClearSDKCache();
 
     // SDK缓存被清理, 建议回到游戏开始界面，需重新初始化SDK;
     ```
@@ -89,7 +89,7 @@
 - #### 调用示例
 
     ```cs
-    string deviceId = AiriSDK.Instance.GetDeviceID();
+    string deviceId = YoStarSDK.Instance.GetDeviceID();
     ```
 
 ### 6、获取SDK版本号
@@ -103,7 +103,7 @@
 - #### 调用示例
 
     ```cs
-    string sdkVer = AiriSDK.Instance.GetSdkVer();
+    string sdkVer = YoStarSDK.Instance.GetSdkVer();
     ```
 
 ### 7、分享截图
@@ -122,7 +122,7 @@
 
 - #### 调用示例
     ```cs
-    AiriSDK.Instance.SystemShare("sample", screenShot);
+    YoStarSDK.Instance.SystemShare("sample", screenShot);
     ```
 
 ### 8、打开商店评分界面
@@ -135,7 +135,7 @@
 
 - #### 调用示例
     ```cs
-    AiriSDK.Instance.RequestStoreReview();
+    YoStarSDK.Instance.RequestStoreReview();
     ```
 
 ### 9、检测设备是否支持苹果登录
@@ -148,6 +148,6 @@
 
 - #### 调用示例
     ```cs
-    bool isAvailable = AiriSDK.Instance.AppleSignInAvailable();
+    bool isAvailable = YoStarSDK.Instance.AppleSignInAvailable();
     ```
 
