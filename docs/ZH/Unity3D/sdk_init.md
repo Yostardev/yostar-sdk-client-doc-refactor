@@ -15,16 +15,16 @@
 - #### 调用示例
 
   ```cs
-      private void OnInitRespone(InitRet ret){//callback
+      private void OnInitResponse(InitRet ret){//callback
 
           if (ret.R_CODE == ResultCode.OK){
-              // init success,game continue
+              //  初始化成功, 继续游戏逻辑
           }else{
-              // init fail, do not anything
+              //初始化失败, 不做操作;  用户可重新触发初始化按钮
           }
       }
 
-      YoStarSDKEvent.Instance.InitEvent += OnInitRespone;
+      YoStarSDKEvent.Instance.InitEvent += OnInitResponse;
 
       YoStarSDK.Instance.Init();
   ```
