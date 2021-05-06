@@ -54,43 +54,43 @@
     ```
 
 
-
-
-### 4、打开用户中心界面
-\* 该接口需账户登录成功后才能调用;<br/>\* 调用该接口，打开用户中心界面; 用户可查看、生成新的引继码、三方账号绑定、删除账号、清理缓存等操作;<br/>
-\* 调用接口前，请先按示例设置好删除账号回调、清理缓存回调、退出登录回调，以便在用户执行完对应操作时，可以切换游戏场景;<br/>
-\* 一个账号同时只能有一个引继码,多次生成,之前的引继码会被失效;<br/>
-\* 一个引继码只能用来登录一次;
-
-
-- #### 函数定义
-    ```cs
-    public void showAccountCenter()
-    ```
-
-- #### 调用示例
-    ```cs
-
-    private void OnDeleteAccountResponse(DeleteAccountRet ret){
-        // 账号删除成功, 建议回到游戏登录界面
-    }
-    YoStarSDKEvent.Instance.DeleteAccountEvent += OnDeleteAccountResponse;
-
-    private void OnClearCacheResponse(ClearRet ret){
-         // 缓存清理成功，建议回到游戏初始化界面，用户可触发初始化按钮进行重新初始化SDK；
-    }
-    YoStarSDKEvent.Instance.ClearSDKCacheEvent += OnClearCacheResponse;
-
-    private void OnLogoutResponse(LogoutRet ret){
-      // 账号退出成功，建议回到游戏登录界面
-    }
-    YoStarSDKEvent.Instance.LogoutEvent += OnLogoutResponse;
-
-    YoStarSDK.Instance.showAccountCenter();
-
-    ```
-
-
+//
+//
+//### 4、打开用户中心界面
+//\* 该接口需账户登录成功后才能调用;<br/>\* 调用该接口，打开用户中心界面; 用户可查看、生成新的引继码、三方账号绑定、删除账号、清理缓存等操作;<br/>
+//\* 调用接口前，请先按示例设置好删除账号回调、清理缓存回调、退出登录回调，以便在用户执行完对应操作时，可以切换游戏场景;<br/>
+//\* 一个账号同时只能有一个引继码,多次生成,之前的引继码会被失效;<br/>
+//\* 一个引继码只能用来登录一次;
+//
+//
+//- #### 函数定义
+//    ```cs
+//    public void showUserCenter()
+//    ```
+//
+//- #### 调用示例
+//    ```cs
+//
+//    private void OnDeleteAccountResponse(DeleteAccountRet ret){
+//        // 账号删除成功, 建议回到游戏登录界面
+//    }
+//    YoStarSDKEvent.Instance.DeleteAccountEvent += OnDeleteAccountResponse;
+//
+//    private void OnClearCacheResponse(ClearRet ret){
+//         // 缓存清理成功，建议回到游戏初始化界面，用户可触发初始化按钮进行重新初始化SDK；
+//    }
+//    YoStarSDKEvent.Instance.ClearSDKCacheEvent += OnClearCacheResponse;
+//
+//    private void OnLogoutResponse(LogoutRet ret){
+//      // 账号退出成功，建议回到游戏登录界面
+//    }
+//    YoStarSDKEvent.Instance.LogoutEvent += OnLogoutResponse;
+//
+//    YoStarSDK.Instance.showUserCenter();
+//
+//    ```
+//
+//
 
 
 
