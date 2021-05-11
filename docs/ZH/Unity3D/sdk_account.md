@@ -32,9 +32,18 @@
 
     | LoginRet    | 参数说明 | 备注 |
     | -------------- | ------ | ------ |
-    | strProductId   | string | 商品ID，和运营方协商后获取，该ID是配置在AiriSDK后台（必要） |
-    | eServerTag     | BuyServerTag(枚举) | 服务器枚举（提审服、预发布服、正式服）（必要）支付对应的服务器tag。根据这个tag不同，最后服务端的支付通知URL也会不同 |
-    | strExtraData   | string | 透传字段，该字段会在客户端的回调，以及服务端的支付回调中原样返回，请保证每次传入的参数不一致。服务端的支付回调通知请参见服务端接入文档。（必要） |
+    | R_CODE   | ResultCode(枚举) |错误码 |
+    | R_MSG     | string | 错误信息,辅助排查问题 |
+    | LOGIN_UID   | string | SDK登陆成功之后返回UID |
+    | LOGIN_NAME   | string | SDK登陆成功之后返回用户名 |
+    | LOGIN_PLATFORM   | LoginPlatform 登录的账号平台(枚举) | fb、tw、google、yostar、apple、游客 |
+    | FACEBOOK_NAME   | string | 绑定的FB账号用户名 |
+    | TWITTER_NAME   | string | 绑定的TW账号用户名 |
+    | YOSTAR_NAME    | string | 绑定的YoStar账号用户名 |
+    | GOOGLE_EMAIL   | string | 绑定的Google账号用户名 |
+    | APPLE_ID       | string | 绑定的Apple账号ID |
+    | MIGRATION_CODE   | string | 该账号生成的可用引继码 |
+    
 
 
 ### 3、打开账号中心界面
@@ -52,46 +61,5 @@
     ```cs
     YoStarSDK.Instance.ShowAccountCenter();
     ```
-
-
-//
-//
-//### 4、打开用户中心界面
-//\* 该接口需账户登录成功后才能调用;<br/>\* 调用该接口，打开用户中心界面; 用户可查看、生成新的引继码、三方账号绑定、删除账号、清理缓存等操作;<br/>
-//\* 调用接口前，请先按示例设置好删除账号回调、清理缓存回调、退出登录回调，以便在用户执行完对应操作时，可以切换游戏场景;<br/>
-//\* 一个账号同时只能有一个引继码,多次生成,之前的引继码会被失效;<br/>
-//\* 一个引继码只能用来登录一次;
-//
-//
-//- #### 函数定义
-//    ```cs
-//    public void showUserCenter()
-//    ```
-//
-//- #### 调用示例
-//    ```cs
-//
-//    private void OnDeleteAccountResponse(DeleteAccountRet ret){
-//        // 账号删除成功, 建议回到游戏登录界面
-//    }
-//    YoStarSDKEvent.Instance.DeleteAccountEvent += OnDeleteAccountResponse;
-//
-//    private void OnClearCacheResponse(ClearRet ret){
-//         // 缓存清理成功，建议回到游戏初始化界面，用户可触发初始化按钮进行重新初始化SDK；
-//    }
-//    YoStarSDKEvent.Instance.ClearSDKCacheEvent += OnClearCacheResponse;
-//
-//    private void OnLogoutResponse(LogoutRet ret){
-//      // 账号退出成功，建议回到游戏登录界面
-//    }
-//    YoStarSDKEvent.Instance.LogoutEvent += OnLogoutResponse;
-//
-//    YoStarSDK.Instance.showUserCenter();
-//
-//    ```
-//
-//
-
-
 
 
