@@ -30,19 +30,19 @@
     YoStarSDK.Instance.Login();
 ```
 
-    | LoginRet    | 参数说明 | 备注 |
-    | -------------- | ------ | ------ |
-    | R_CODE   | ResultCode(枚举) |错误码 |
-    | R_MSG     | string | 错误信息,辅助排查问题 |
-    | LOGIN_UID   | string | SDK登陆成功之后返回UID |
-    | LOGIN_NAME   | string | SDK登陆成功之后返回用户名 |
-    | LOGIN_PLATFORM   | LoginPlatform 登录的账号平台(枚举) | fb、tw、google、yostar、apple、游客 |
-    | FACEBOOK_NAME   | string | 绑定的FB账号用户名 |
-    | TWITTER_NAME   | string | 绑定的TW账号用户名 |
-    | YOSTAR_NAME    | string | 绑定的YoStar账号用户名 |
-    | GOOGLE_EMAIL   | string | 绑定的Google账号用户名 |
-    | APPLE_ID       | string | 绑定的Apple账号ID |
-    | MIGRATION_CODE   | string | 该账号生成的可用引继码 |
+    | LoginRet    | 类型 | 参数说明 | 备注 |
+    | -------------- | ------ | ------ |------ |
+    | R_CODE   | ResultCode(枚举) |错误码 |无
+    | R_MSG     | string | 错误信息,辅助排查问题 |无
+    | LOGIN_UID   | string | SDK登陆成功之后返回UID |无
+    | LOGIN_NAME   | string | SDK登陆成功之后返回用户名 |无
+    | LOGIN_PLATFORM   | LoginPlatform(枚举) | 登录平台类型 | fb、tw、google、yostar、apple、游客
+    | FACEBOOK_NAME   | string | 绑定的FB账号用户名 |无
+    | TWITTER_NAME   | string | 绑定的TW账号用户名 |无
+    | YOSTAR_NAME    | string | 绑定的YoStar账号用户名 |无
+    | GOOGLE_EMAIL   | string | 绑定的Google账号用户名 |无
+    | APPLE_ID       | string | 绑定的Apple账号ID |无
+    | MIGRATION_CODE   | string | 该账号生成的可用引继码 |无
     
 
 
