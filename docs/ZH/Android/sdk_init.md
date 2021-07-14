@@ -11,10 +11,10 @@
   public static void init(Activity activity, String sdkUrl, String payStoreId)
   ```
 
-    入参名称|入参说明|备注
-    ---|:--:|:--|
-    sdkUrl|SDK服务器地址|无|
-    payStoreId|支付渠道|google支付:googleplay|
+    入参名称|类型|入参说明|备注
+    ---|:--:|:--|:--|
+    sdkUrl|string|SDK服务器地址|无|
+    payStoreId|string|支付渠道|google支付:googleplay|
 
 <br/>
 
@@ -27,13 +27,10 @@
   ``` java
     {"R_VIRTUAL":1,"LOGIN_PLATFORM":-1,"SHOW_LOG":true,"METHOD":"OnInitNotify","LOGIN_UID":"","R_MSG":"success","R_CODE":0,"LOGIN_NAME":""}
   ```
-    resultMap 属性名|参数说明|备注
-    ---|:--:|:--|
-    R_CODE|状态码|0:成功<br/> 其他值可查看第7章错误码表含义|
-    R_MSG| 错误信息,辅助排查问题|无 |
-    METHOD| 对应接口|无 |
-    SHOW_LOG| log信息|初始化接口控制<br/>true//显示<br>false//不显示 |
-    R_VIRTUAL| 设备类型|1//虚拟机<br/>0//真机 |
-    LOGIN_UID|缓存的账号UID|无|
-    LOGIN_NAME|缓存的账号昵称|无 |
-    LoginPlatform|缓存账号类型,枚举值|DEVICE = 0,//游客<br/>DEVICE = 0,//游客<br/>MIGRATIONCODE = 1,//引继码<br/>TWITTER = 2,    //twitter<br/>FACEBOOK = 3, //facebook<br/>YOSTAR = 4,//悠星<br/>GOOGLE = 5,//Google<br/>APPLE = 6, //apple|
+    resultMap 属性名|类型|参数说明|备注
+    ---|:--:|:--|:--|
+    SHOW_LOG|boolean| log信息|初始化接口控制<br/>true//显示<br>false//不显示 |
+    R_VIRTUAL|int| 设备类型|1//虚拟机<br/>0//真机 |
+    LOGIN_UID|string|缓存的账号UID|无|
+    LOGIN_NAME|string|缓存的账号昵称|无 |
+    LoginPlatform|int|缓存账号类型|DEVICE = 0,//游客<br/>MIGRATIONCODE = 1,//引继码<br/>TWITTER = 2,    //twitter<br/>FACEBOOK = 3, //facebook<br/>YOSTAR = 4,//悠星<br/>GOOGLE = 5,//Google|

@@ -13,9 +13,9 @@
     public static void showAgreement(Activity activity,int agreementType)
     ```
 
-    入参名称|入参说明|备注
-    ---|:--:|:--|
-    agreementType|需展示的协议类型,枚举值|agreementType, //韩服 退款协议<br/>AGREEMENT_REFUND_EXPLAIN,// 韩服 退款说明<br/>AGREEMENT_FUND_SETTLEMENT,// 日服 资金结算法<br/>AGREEMENT_SPECIFIC_COMMERCIAL,// 日服 特定商业法|
+    入参名称|类型|入参说明|备注
+    ---|:--:|:--|:--|
+    agreementType|int|需展示的协议类型,枚举值| 0 // 日服 资金结算 <br/> 1 // 日服 特定商业 <br/> 2 // 韩服 退款说明 <br/> 3 // 韩服 退款协议 |
 
 - #### 调用示例
     ``` java
@@ -32,11 +32,11 @@
     public static void pay(Activity activity, String productId, String serverTag, String extraData)
     ```
 
-    入参名称|入参说明|备注
-    ---|:--:|:--|
-    productId|需要支付的产品Id|无|
-    serverTag|支付环境地址;枚举值|在不同支付环境上支付的订单，可用来区分不同阶段的订单，比如测试、提审、正式环境|
-    extraData|透传递参数|建议入参游戏的支付订单号,该参数会在支付回调里携带返回|
+    入参名称|类型|入参说明|备注
+    ---|:--:|:--|:--|
+    productId|string|需要支付的产品Id|无|
+    serverTag|string|支付环境地址;枚举值|在不同支付环境上支付的订单，可用来区分不同阶段的订单，比如测试、提审、正式环境|
+    extraData|string|透传递参数|建议入参游戏的支付订单号,该参数会在支付回调里携带返回|
 
 - #### 调用示例
 
@@ -51,7 +51,7 @@
     ``` java
     {"EXTRA_DATA":"cp_order1619087178071","ORDER_ID":"1250503465462337536","METHOD":"OnPayNotify","R_MSG":"the relevant request is in progress and takes a long time to notify the client to poll","R_CODE":200180}
     ```
-    PayRet 属性名|参数说明|备注
-    ---|:--:|:--|
-    ORDER_ID| 悠星订单号|无 |
-    EXTRA_DATA| 透传字段|透传支付接口的入参extraData字段 |
+    PayRet 属性名|类型|参数说明|备注
+    ---|:--:|:--|:--|
+    ORDER_ID| string|悠星订单号|无 |
+    EXTRA_DATA| string|透传字段|透传支付接口的入参extraData字段 |

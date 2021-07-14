@@ -26,11 +26,17 @@
     {"AMAZON_NAME":"","LOGIN_PLATFORM":0,"YOSTAR_NAME":"","TWITTER_NAME":"","GOOGLE_EMAIL":"","MIGRATION_CODE":"","METHOD":"OnLoginNotify","FACEBOOK_NAME":"","LOGIN_UID":"40119188699623424","R_MSG":" success ","R_CODE":0,"LOGIN_NAME":""}
     ```
 
-    | resultMap    | 参数说明 | 备注 |
-    | -------------- | ------ | ------ |
-    | strProductId   | string | 商品ID，和运营方协商后获取，该ID是配置在AiriSDK后台（必要） |
-    | eServerTag     | BuyServerTag(枚举) | 服务器枚举（提审服、预发布服、正式服）（必要）支付对应的服务器tag。根据这个tag不同，最后服务端的支付通知URL也会不同 |
-    | strExtraData   | string | 透传字段，该字段会在客户端的回调，以及服务端的支付回调中原样返回，请保证每次传入的参数不一致。服务端的支付回调通知请参见服务端接入文档。（必要） |
+    | LoginRet    | 类型 | 参数说明 | 备注 |
+    | -------------- | ------ | ------ |------ |
+    | LOGIN_UID   | string | SDK登陆成功之后返回UID |无
+    | LOGIN_NAME   | string | SDK登陆成功之后返回用户名 |无
+    | LOGIN_PLATFORM   | int | 登录平台类型 | fb、tw、google、yostar、apple、游客
+    | FACEBOOK_NAME   | string | 绑定的FB账号用户名 |无
+    | TWITTER_NAME   | string | 绑定的TW账号用户名 |无
+    | YOSTAR_NAME    | string | 绑定的YoStar账号用户名 |无
+    | GOOGLE_EMAIL   | string | 绑定的Google账号用户名 |无
+    | AMAZON_NAME   | string | 绑定的AMAZON账号用户名 |无
+    | MIGRATION_CODE   | string | 该账号生成的可用引继码 |无（必要） |无|
 
 
 ### 3、打开账号中心界面
@@ -77,9 +83,9 @@
     public static void linkSocial(Activity activity, int platform)
     ```
 
-    入参名称|入参说明|备注
-    ---|:--:|:--|
-    platform|需绑定的平台类型|2//TWITTER,<br/>3//FACEBOOK,<br/>4//YOSTAR,<br/>5//GOOGLE|
+    入参名称|类型|入参说明|备注
+    ---|:--:|:--|:--|
+    platform|int|需绑定的平台类型|2//TWITTER,<br/>3//FACEBOOK,<br/>4//YOSTAR,<br/>5//GOOGLE|
 
 
 - #### 调用示例
@@ -93,12 +99,10 @@
       {"LOGIN_PLATFORM":3,"SOCAIL_NAME":"xxx","METHOD":"OnLinkNotify","R_MSG":" success ","R_CODE":0}
   ```
 
-    | resultMap属性    | 参数说明 | 备注 |
-    | ---- | ---- | ------ |
-    | R_CODE | 状态码,枚举值 | 0:成功<br/>其他值可查看错误表含义 |
-    | R_MSG | 错误信息,辅助排查问题 | 无  |
-    | LOGIN_PLATFORM | 绑定的三方平台 |2//TWITTER,<br/>3//FACEBOOK,<br/>4//YOSTAR,<br/>5//GOOGLE|
-    | SOCAIL_NAME | 三方账号的昵称 | 无 |
+    | resultMap属性    |类型| 参数说明 | 备注 |
+    | ---- | ---- | ------ | ------ |
+    | LOGIN_PLATFORM | int | 绑定的三方平台 |2//TWITTER,<br/>3//FACEBOOK,<br/>4//YOSTAR,<br/>5//GOOGLE|
+    | SOCAIL_NAME | string | 三方账号的昵称 | 无 |
 
 
 
@@ -112,9 +116,9 @@
     public static void unlinkSocial(Activity activity, int platform)
     ```
 
-    入参名称 | 入参说明 | 备注
-    --|:---:|:---|
-    platform|需绑定的平台类型,枚举值|2//TWITTER,<br/>3//FACEBOOK,<br/>4//YOSTAR,<br/>5//GOOGLE|
+    入参名称 | 类型 |入参说明 | 备注
+    --|:---:|:---|:---|
+    platform|int|需绑定的平台类型,枚举值|2//TWITTER,<br/>3//FACEBOOK,<br/>4//YOSTAR,<br/>5//GOOGLE|
 
 
 - #### 调用示例
@@ -127,12 +131,12 @@
       {"LOGIN_PLATFORM":3,"SOCAIL_NAME":"xxx","METHOD":"OnUnLinkNotify","R_MSG":" success ","R_CODE":0}
   ```
   
-    resultMap 属性名|参数说明|备注
-    ---|:--:|:--|
-    R_CODE|状态码,枚举值|0:成功<br/>其他值可查看错误表含义|
-    R_MSG| 错误信息,辅助排查问题|无 |
-    LOGIN_PLATFORM|解绑绑定的三方平台|2//TWITTER,<br/>3//FACEBOOK,<br/>4//YOSTAR,<br/>5//GOOGLE|
-    SOCAIL_NAME|三方账号的昵称|无 |
+    resultMap 属性名|类型|参数说明|备注
+    ---|:--:|:--|:--|
+    R_CODE|int|状态码,枚举值|0:成功<br/>其他值可查看错误表含义|
+    R_MSG|string| 错误信息,辅助排查问题|无 |
+    LOGIN_PLATFORM|int|解绑绑定的三方平台|2//TWITTER,<br/>3//FACEBOOK,<br/>4//YOSTAR,<br/>5//GOOGLE|
+    SOCAIL_NAME|string|三方账号的昵称|无 |
 
 
 
