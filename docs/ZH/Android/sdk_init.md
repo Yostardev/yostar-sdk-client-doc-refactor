@@ -21,7 +21,7 @@
 - #### 调用示例
 
   ``` java
-  AiriSDK.init(MainActivity.this, "https://xxxxx.arknights.com", "googleplay");
+  YoStarSDK.init(MainActivity.this, "https://xxxxx.arknights.com", "googleplay");
   ```
 - #### 回调示例
   ``` java

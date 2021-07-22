@@ -1,4 +1,4 @@
-本SDK的主入口类为AiriSDK，以下方法皆从该类中调用。
+本SDK的主入口类为YoStarSDK，以下方法皆从该类中调用。
 
 - #### 函数定义
 
@@ -15,7 +15,7 @@
 - #### 调用示例
 
   ``` java
-      AiriSDK.setCallBack(new AiriSDK.SdkCallBack() {
+      YoStarSDK.setCallBack(new AiriSDK.SdkCallBack() {
           @Override public void onCallBack(HashMap<String, Object> resultMap) {
               // 所有异步接口调用后，调用结果都会在该函数返回；
           }

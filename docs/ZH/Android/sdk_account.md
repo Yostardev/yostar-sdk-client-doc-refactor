@@ -6,7 +6,7 @@
 ### 2、账号登录
 <span id = "login"/>
 
-\* 调用该接口可完成账号的快速登录;<br/>\* 如果是第一次调用该接口，会进行游客登录(日服)或者打开账号中心界面UI让用户选择登录方式(美韩服);<br/>\* 如果SDK已有登录缓存记录，则会用缓存进行快速登录;<br/>\* 参考下面的调用示例，请先设置AiriSDK.setCallBack监听回调，以便登录成功后,顺利收到登录成功的事件;
+\* 调用该接口可完成账号的快速登录;<br/>\* 如果是第一次调用该接口，会进行游客登录(日服)或者打开账号中心界面UI让用户选择登录方式(美韩服);<br/>\* 如果SDK已有登录缓存记录，则会用缓存进行快速登录;<br/>\* 参考下面的调用示例，请先设置YoStarSDK.setCallBack监听回调，以便登录成功后,顺利收到登录成功的事件;
 
 
 - #### 函数定义
@@ -18,7 +18,7 @@
 - #### 调用示例
 
     ``` java
-    AiriSDK.login(MainActivity.this);
+    YoStarSDK.login(MainActivity.this);
     ```
 - #### 回调示例
 
@@ -40,7 +40,7 @@
 
 
 ### 3、打开账号中心界面
-\* 调用该接口打开账号中心界面UI，用户可以在UI上选择登录方式(FB、TW、Google、Yostar、引继码); <br/>\* 调用该接口前，务必参考[【账号登录】](#login)章节先设置AiriSDK.setCallBack监听回调，以便登录成功后，顺利收到登录成功的事件;
+\* 调用该接口打开账号中心界面UI，用户可以在UI上选择登录方式(FB、TW、Google、Yostar、引继码); <br/>\* 调用该接口前，务必参考[【账号登录】](#login)章节先设置YoStarSDK.setCallBack监听回调，以便登录成功后，顺利收到登录成功的事件;
 
 
 - #### 函数定义
@@ -52,7 +52,7 @@
 - #### 调用示例
 
     ``` java
-    AiriSDK.showAccountCenter(MainActivity.this);
+    YoStarSDK.showAccountCenter(MainActivity.this);
     ```
 
 
@@ -71,12 +71,12 @@
 
 - #### 调用示例
     ``` java
-    AiriSDK.showTranscode(MainActivity.this);
+    YoStarSDK.showTranscode(MainActivity.this);
     ```
 
 
 ### 5、绑定三方账号
-\* 该接口需账户登录成功后才能调用;<br/>\* 调用该接口可实现本地账号与三方账号建立绑定连接关系;<br/>\* 调用该接口前,务必先设置AiriSDK.setCallBack监听回调，以便绑定操作后,顺利收到操作结果的事件;
+\* 该接口需账户登录成功后才能调用;<br/>\* 调用该接口可实现本地账号与三方账号建立绑定连接关系;<br/>\* 调用该接口前,务必先设置YoStarSDK.setCallBack监听回调，以便绑定操作后,顺利收到操作结果的事件;
 
 - #### 函数定义
     ``` java
@@ -90,7 +90,7 @@
 
 - #### 调用示例
     ``` java
-        AiriSDK.linkSocial(MainActivity.this, 3);
+        YoStarSDK.linkSocial(MainActivity.this, 3);
     ```
   
 - #### 回调示例
@@ -108,7 +108,7 @@
 
 
 ### 6、解绑三方账号
-\* 该接口需账户登录成功后才能调用;<br/>\* 调用该接口可实现本地账号与三方账号解除绑定连接关系;<br/>\* 调用该接口前,务必先设置AiriSDK.setCallBack监听回调，以便解绑操作后,顺利收到操作结果的事件;
+\* 该接口需账户登录成功后才能调用;<br/>\* 调用该接口可实现本地账号与三方账号解除绑定连接关系;<br/>\* 调用该接口前,务必先设置YoStarSDK.setCallBack监听回调，以便解绑操作后,顺利收到操作结果的事件;
 
 
 - #### 函数定义
@@ -123,7 +123,7 @@
 
 - #### 调用示例
     ``` java
-    AiriSDK.unlinkSocial(MainActivity.this, SdkConst.LOGINPLATFORM_FACEBOOK);
+    YoStarSDK.unlinkSocial(MainActivity.this, SdkConst.LOGINPLATFORM_FACEBOOK);
     ```
 - #### 回调示例
 
@@ -142,7 +142,7 @@
 
 
 ### 7、删除账号
-\* 该接口需账户登录成功后才能调用;<br/>\* 调用该接口可实现从SDK服务器上删除SDK UID账号;<br/>\* 调用该接口前,务必先设置AiriSDK.setCallBack监听回调，以便删除操作后,顺利收到操作结果的事件;
+\* 该接口需账户登录成功后才能调用;<br/>\* 调用该接口可实现从SDK服务器上删除SDK UID账号;<br/>\* 调用该接口前,务必先设置YoStarSDK.setCallBack监听回调，以便删除操作后,顺利收到操作结果的事件;
 
 
 - #### 函数定义
@@ -152,7 +152,7 @@
 
 - #### 调用示例
     ``` java
-    AiriSDK.deleteAccount(MainActivity.this);
+    YoStarSDK.deleteAccount(MainActivity.this);
     ```
 
 

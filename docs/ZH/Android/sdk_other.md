@@ -8,14 +8,14 @@
 - #### 调用示例
 
     ``` java
-    AiriSDK.showAnnouncement(MainActivity.this);
+    YoStarSDK.showAnnouncement(MainActivity.this);
     ```
 
 ### 2、打开设置界面(用户未登录)
 <span id = "settings"/>
 
 \* 调用该接口打开设置界面,可查看用户协议、隐私声明、清理缓存、联系客服；<br/>
-\* 调用该接口前需先设置好AiriSDK.setCallBack回调，以便接收SDK缓存被清理的事件，后续需重新初始化SDK；
+\* 调用该接口前需先设置好YoStarSDK.setCallBack回调，以便接收SDK缓存被清理的事件，后续需重新初始化SDK；
 
 - #### 函数定义
     ``` java
@@ -24,12 +24,12 @@
 - #### 调用示例
 
     ``` java
-    AiriSDK.showSettings(MainActivity.this);
+    YoStarSDK.showSettings(MainActivity.this);
     ```
 
 ### 3、打开设置界面(用户已登录)
 \* 调用该接口打开设置界面,可查看用户协议、隐私声明、清理缓存、联系客服；<br/>
-\* 调用该接口前需先设置好AiriSDK.setCallBack回调，可参考[【打开设置界面(用户未登录)】](#settings)章节;
+\* 调用该接口前需先设置好YoStarSDK.setCallBack回调，可参考[【打开设置界面(用户未登录)】](#settings)章节;
 
 - #### 函数定义
     ``` java
@@ -39,7 +39,7 @@
     入参名称|类型|入参说明|备注
     ---|:--:|:--|:--|
     serverId| string |服务器ID|无 |
-    sdkVersion| string|airiSDK版本|无 |
+    sdkVersion| string|YoStarSDK版本|无 |
     roleUid| string|角色UID|无 |
     roleName| string|角色昵称|无 |
     roleCreateTime| string|角色创建时间|无 |
@@ -49,7 +49,7 @@
 - #### 调用示例
 
     ``` java
-    AiriSDK.showSettings(MainActivity.this, "3.0.0", "serverId", "001", "roleName", "", 0, "[tag1, tag2]");
+    YoStarSDK.showSettings(MainActivity.this, "3.0.0", "serverId", "001", "roleName", "", 0, "[tag1, tag2]");
     ```
 
 ### 4、清理SDK缓存
@@ -65,7 +65,7 @@
 - #### 调用示例
 
     ``` java
-    AiriSDK.clearSDKCache();
+    YoStarSDK.clearSDKCache();
 
     // SDK缓存被清理, 建议回到游戏开始界面，需重新初始化SDK;
     ```
@@ -81,7 +81,7 @@
 - #### 调用示例
 
     ``` java
-    AiriSDK.getDeviceId();
+    YoStarSDK.getDeviceId();
     ```
 
 ### 6、分享截图
@@ -100,7 +100,7 @@
 
 - #### 调用示例
     ``` java
-    AiriSDK.systemShare(MainActivity.this, "strShareText", "imgPath");
+    YoStarSDK.systemShare(MainActivity.this, "strShareText", "imgPath");
     ```
 
 ### 7、打开商店评分界面
@@ -113,6 +113,6 @@
 
 - #### 调用示例
     ``` java
-    AiriSDK.requestStoreReview(MainActivity.this);
+    YoStarSDK.requestStoreReview(MainActivity.this);
     ```
 

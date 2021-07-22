@@ -10,7 +10,7 @@
 
 ### 2: res资源配置
 
-AiriSDK集成了firebase的部分功能，需要在res/values/google_service_strings.xml中配置firebase服务参数。
+YoStarSDK集成了firebase的部分功能，需要在res/values/google_service_strings.xml中配置firebase服务参数。
 获取参数值请咨询悠星商务人员。
 
 \* 其中default_web_client_id字段已从后台初始化接口下发

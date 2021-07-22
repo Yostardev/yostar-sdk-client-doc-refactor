@@ -19,13 +19,13 @@
 
 - #### 调用示例
     ``` java
-    AiriSDK.showAgreement(MainActivity.this, GooglePayComponent.AGREEMENT_FUND_SETTLEMENT);
+    YoStarSDK.showAgreement(MainActivity.this, GooglePayComponent.AGREEMENT_FUND_SETTLEMENT);
     ```
 
 
 
 ### 3、发起支付
-\* 该接口需账户登录成功后才能调用;<br/>\* 调用该接口可实现游戏道具的购买;<br/>\* 调用该接口前,务必先设置AiriSDK.setCallBack监听回调，以便支付操作后,顺利收到操作结果的事件;
+\* 该接口需账户登录成功后才能调用;<br/>\* 调用该接口可实现游戏道具的购买;<br/>\* 调用该接口前,务必先设置YoStarSDK.setCallBack监听回调，以便支付操作后,顺利收到操作结果的事件;
 
 - #### 函数定义
     ``` java
@@ -41,7 +41,7 @@
 - #### 调用示例
 
     ``` java
-    AiriSDK.pay(MainActivity.this, "productId", "serverTag", "extraData");
+    YoStarSDK.pay(MainActivity.this, "productId", "serverTag", "extraData");
     ```
 - #### 回调示例
     ``` java

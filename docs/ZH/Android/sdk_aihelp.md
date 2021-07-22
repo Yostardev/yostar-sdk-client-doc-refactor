@@ -12,7 +12,7 @@
 - #### 调用示例
 
     ``` java
-    AiriSDK.showAiHelpFAQs(MainActivity.this);
+    YoStarSDK.showAiHelpFAQs(MainActivity.this);
     ```
 
 
@@ -28,7 +28,7 @@
     入参名称|类型|入参说明|备注
     ---|:--:|:--|:--|
     serverId| string |服务器ID|无 |
-    sdkVersion| string|airiSDK版本|无 |
+    sdkVersion| string|YoStarSDK版本|无 |
     roleUid| string|角色UID|无 |
     roleName| string|角色昵称|无 |
     roleCreateTime| string|角色创建时间|无 |
@@ -39,7 +39,7 @@
 - #### 调用示例
 
     ``` java
-    AiriSDK.showAiHelpFAQs(MainActivity.this, "3.0.0", "serverId", "001", "roleName", "", 0, "[tag1, tag2]");
+    YoStarSDK.showAiHelpFAQs(MainActivity.this, "3.0.0", "serverId", "001", "roleName", "", 0, "[tag1, tag2]");
     ```
 
 

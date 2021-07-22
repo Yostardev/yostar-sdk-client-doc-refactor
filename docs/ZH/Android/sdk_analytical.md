@@ -14,5 +14,5 @@
 - #### 调用示例
 
     ``` java
-    AiriSDK.userEventUpload("test_event_name", "{"test1":"t_test_1","test2":"t_test_2","test3":"t_test_3"}");
+    YoStarSDK.userEventUpload("test_event_name", "{"test1":"t_test_1","test2":"t_test_2","test3":"t_test_3"}");
     ```
