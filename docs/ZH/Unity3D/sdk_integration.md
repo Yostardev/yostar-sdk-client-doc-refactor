@@ -1,14 +1,14 @@
-### Step1: 导入AiriSDK
-\* Unity编辑器打开游戏工程后, 依次双击AiriSDK和Resource的unitypackage 导入到游戏工程;<br/>
+### Step1: YostarSDK
+\* Unity编辑器打开游戏工程后, 依次双击YostarSDK和Resource的unitypackage 导入到游戏工程;<br/>
 \* 如果你的游戏工程中已经有自定义的AndroidManifest.xml ,在导入AiriSDK时请注意，避免该文件被覆盖重写;
 
-#### AiriSDK目录结构
+##### YostarSDK目录结构
 <img src="https://sdkresources.oss-cn-shanghai.aliyuncs.com/AiriSDK%E6%8E%A5%E5%85%A5%E6%96%87%E6%A1%A3%E5%9B%BE%E5%BA%8A/unity_dir.png" alt="" width="330" height="260" align="left"  />
 <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
 
 
 ### Step2: 配置接入参数
-\* 选择菜单栏 *AiriSDK > Config Settings* 菜单项,打开AiriSDK的参数配置面板;<br/>
+\* 选择菜单栏 *YoStarSDK > Config Settings* 菜单项,打开YoStarSDK的参数配置面板;<br/>
 
 ![loading.png](https://sdkresources.oss-cn-shanghai.aliyuncs.com/AiriSDK%E6%8E%A5%E5%85%A5%E6%96%87%E6%A1%A3%E5%9B%BE%E5%BA%8A/unity_asset.png)
 <br/>

@@ -8,7 +8,7 @@
 - #### 调用示例
 
     ```cs
-    YoStarSDK.Instance.ShowAnnouncement();
+    AiriSDK.Instance.ShowAnnouncement();
     ```
 
 ### 2、打开设置界面(用户未登录)
@@ -19,7 +19,7 @@
 
 - #### 函数定义
     ```cs
-    public void ShowSettings()
+    public void ShowAnnouncement()
     ```
 - #### 调用示例
 
@@ -32,8 +32,8 @@
       }
     }
 
-    YoStarSDKEvent.Instance.ClearSDKCacheEvent += OnClearCacheRespone;
-    YoStarSDK.Instance.ShowSettings();
+    AirisdkEvent.Instance.ClearSDKCacheEvent += OnClearCacheRespone;
+    AiriSDK.Instance.ShowAnnouncement();
     ```
 
 ### 3、打开设置界面(用户已登录)
@@ -45,23 +45,40 @@
     public void ShowSettings(string serverId, string roleUid, string roleName, string roleCreateTime, int purchase, string[] tags)
     ```
 
-    入参名称| 类型|入参说明|备注
-    ---|---| ---|---|
-    serverId|string| 服务器ID|无 |
-    roleUid|string| 角色UID|无 |
-    roleName|string| 角色昵称|无 |
-    roleCreateTime|string| 角色创建时间|无 |
-    purchase|int| 角色氪金总额|无 |
-    tags|string[]| 角色标签数组| 标签数据可联系悠星运营获取 |
+    入参名称|入参说明|备注
+    ---|:--:|:--|
+    serverId| 服务器ID|无 |
+    roleUid| 角色UID|无 |
+    roleName| 角色昵称|无 |
+    roleCreateTime| 角色创建时间|无 |
+    purchase| 角色氪金总额|无 |
+    tags| 角色标签数组| 标签数据可联系悠星运营获取 |
 
 - #### 调用示例
 
     ```cs
-    YoStarSDKEvent.Instance.ClearSDKCacheEvent += OnClearCacheRespone;
-    YoStarSDK.Instance.ShowSettings("servierId","uid", "name", "1998-08-25", 100, new string[0]);
+    AirisdkEvent.Instance.ClearSDKCacheEvent += OnClearCacheRespone;
+    AiriSDK.Instance.ShowSettings("servierId","uid", "name", "1998-08-25", 100, new string[0]);
     ```
 
-### 4、获取设备号
+### 4、清理SDK缓存
+\* 调用该界面可清理SDK内运行缓存数据;<br/>
+\* 该接口同步执行,建议游戏调用该接口后, 切换游戏场景到开始界面，需重新初始化SDK;
+
+- #### 函数定义
+    ```cs
+    public ResultCode ClearSDKCache()
+    ```
+
+- #### 调用示例
+
+    ```cs
+    AiriSDK.Instance.ClearSDKCache();
+
+    // SDK缓存被清理, 建议回到游戏开始界面，需重新初始化SDK;
+    ```
+
+### 5、获取设备号
 \* 调用该接口可同步获取SDK内使用的设备号;
 
 - #### 函数定义
@@ -72,10 +89,10 @@
 - #### 调用示例
 
     ```cs
-    string deviceId = YoStarSDK.Instance.GetDeviceID();
+    string deviceId = AiriSDK.Instance.GetDeviceID();
     ```
 
-### 5、获取SDK版本号
+### 6、获取SDK版本号
 \* 调用该接口可同步获取当前SDK版本号;
 
 - #### 函数定义
@@ -86,10 +103,10 @@
 - #### 调用示例
 
     ```cs
-    string sdkVer = YoStarSDK.Instance.GetSdkVer();
+    string sdkVer = AiriSDK.Instance.GetSdkVer();
     ```
 
-### 6、分享截图
+### 7、分享截图
 \* 调用该接口，可以将自定义的Texture2D交由操作系统进行分享到三方应用;
 
 - #### 函数定义
@@ -97,18 +114,18 @@
     public void SystemShare(string strShareText, Texture2D texShare = null)
     ```
 
-    入参名称|类型|入参说明|备注
-    ---|---|---|---|
-    strShareText|string| 分享的文字标题|无 |
-    texShare|Texture2D| 分享的贴图数据 |无|
+    入参名称|入参说明|备注
+    ---|:--:|:--|
+    strShareText| 分享的文字标题|无 |
+    texShare| 分享的贴图数据 |无|
 
 
 - #### 调用示例
     ```cs
-    YoStarSDK.Instance.SystemShare("sample", screenShot);
+    AiriSDK.Instance.SystemShare("sample", screenShot);
     ```
 
-### 7、打开商店评分界面
+### 8、打开商店评分界面
 \* 调用该接口，可打开应用商店的评分页面;
 
 - #### 函数定义
@@ -118,10 +135,10 @@
 
 - #### 调用示例
     ```cs
-    YoStarSDK.Instance.RequestStoreReview();
+    AiriSDK.Instance.RequestStoreReview();
     ```
 
-### 8、检测设备是否支持苹果登录
+### 9、检测设备是否支持苹果登录
 \* 调用该接口，可同步检查本机是否支持苹果登录;
 
 - #### 函数定义
@@ -131,6 +148,6 @@
 
 - #### 调用示例
     ```cs
-    bool isAvailable = YoStarSDK.Instance.AppleSignInAvailable();
+    bool isAvailable = AiriSDK.Instance.AppleSignInAvailable();
     ```
 
