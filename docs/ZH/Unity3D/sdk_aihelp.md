@@ -38,7 +38,7 @@
 - #### 调用示例
 
     ```cs
-    YoStarSDK.Instance.ShowSettings(servierId,uid,name, "1998-08-25", 100, new string[]{"tag1","tag2"});
+    YoStarSDK.Instance.ShowAiHelpFAQs(servierId,uid,name, "1998-08-25", 100, new string[]{"tag1","tag2"});
     ```
 
 
