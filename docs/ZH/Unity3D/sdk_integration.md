@@ -20,7 +20,7 @@
 
 
 **Save Config** 按钮会将上述配置参数保存在以下目录:
-- \Assets\AiriSDK\Resources\
+- \Assets\YoStarSDK\Resources\
 - \Assets\Plugins\Android\res\values\google_service_strings.xml
 - \Assets\Plugins\Android\AndroidManifest.xml
 
