@@ -39,23 +39,23 @@
 ```objectivec
     /**
     @param productId   商品的ID
-    @param serverTag   production 正式服、测试服等
+    @param payNotifyUrl   cp侧的支付通知url
     @param extraData   额外的信息，防重
     */
     + (void)pay:(NSString *)productId
-      serverTag:(NSString *)serverTag
+      payNotifyUrl:(NSString *)payNotifyUrl
       extraData:(NSString *)extraData;
 ```
 
     入参名称|入参说明|备注
     ---|:--:|:--|
     productId|需要支付的产品Id|无|
-    serverTag|支付环境地址;枚举值|在不同支付环境上支付的订单，可用来区分不同阶段的订单，比如测试、提审、正式环境|
+    payNotifyUrl|支付回调URL;字符串|无|
     extraData|透传递参数|建议入参游戏的支付订单号,该参数会在支付回调里携带返回|
 
 - #### 调用示例
 ```objectivec
-[YoStarSDK pay:@"xxxid" serverTag:@"test" extraData:@"xxxxx"];
+[YoStarSDK pay:@"xxxid" payNotifyUrl:@"https://test.paynotifyurl.com" extraData:@"xxxxx"];
 ```
     回调的数据转换成`字典`类型
     属性名|参数说明|备注

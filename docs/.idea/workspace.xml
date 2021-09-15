@@ -23,9 +23,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="637e4525-6581-4dad-a39f-0740f2bb9ea2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ZH/iOS/sdk_account.md" beforeDir="false" afterPath="$PROJECT_DIR$/ZH/iOS/sdk_account.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ZH/iOS/sdk_integration.md" beforeDir="false" afterPath="$PROJECT_DIR$/ZH/iOS/sdk_integration.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ZH/Unity3D/sdk_pay.md" beforeDir="false" afterPath="$PROJECT_DIR$/ZH/Unity3D/sdk_pay.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ZH/iOS/sdk_pay.md" beforeDir="false" afterPath="$PROJECT_DIR$/ZH/iOS/sdk_pay.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,6 +43,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
@@ -68,15 +70,6 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="258" y="98" key="SettingsEditor" timestamp="1626392474142">
-      <screen x="58" y="25" width="1382" height="875" />
-    </state>
-    <state x="258" y="98" key="SettingsEditor/58.25.1382.875@58.25.1382.875" timestamp="1626392474142" />
-    <state x="550" y="380" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1626424942286">
-      <screen x="58" y="25" width="1382" height="875" />
-    </state>
-    <state x="550" y="380" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/58.25.1382.875@58.25.1382.875" timestamp="1626424942286" />
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>

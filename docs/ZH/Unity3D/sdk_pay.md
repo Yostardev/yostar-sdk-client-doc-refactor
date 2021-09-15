@@ -29,13 +29,13 @@
 
 - #### 函数定义
     ```cs
-    public ResultCode Pay(string productId, PayServerTag eServerTag, string extraData)
+    public ResultCode Pay(string productId, string payNotifyUrl, string extraData)
     ```
 
     入参名称|类型|入参说明|备注
     ---|:--:|:--:|:--|
     productId|string|支付的产品Id|无|
-    eServerTag|枚举|枚举(支付环境)|比如测试、提审、正式环境; <br/>可联系悠星为每个枚举环境设置对应的游戏服务器发货地址,该笔订单完成后,悠星SDK服务器会通知对应的游戏服务器地址发放道具;|
+    payNotifyUrl|string|支付回调URL|<br/>可联系悠星为每个枚举环境设置对应的游戏服务器发货地址,该笔订单完成后,悠星SDK服务器会通知对应的游戏服务器地址发放道具;|
     extraData|string|透传递参数|建议入参游戏的支付订单号,该参数会在支付回调里携带返回;|
 
 - #### 调用示例
@@ -56,7 +56,7 @@
     }
 
     YoStarSDKEvent.Instance.PayEvent += OnPayRespone;//Important!!!
-    YoStarSDK.Instance.Pay("gold_100", PayServerTag.Test, "game_order_001");
+    YoStarSDK.Instance.Pay("gold_100", "https://test.paynotifyurl.com", "game_order_001");
     ```
 
     PayRet 属性名|参数说明|备注
