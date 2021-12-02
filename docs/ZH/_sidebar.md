@@ -1,6 +1,7 @@
 
 * Unity3D
   * [版本记录](/ZH/update_commond)
+  * [三方SDK信息](/ZH/sdk_third_info)
   * [概述](/ZH/Unity3D/sdk_summary)
   * [接入前准备](/ZH/Unity3D/sdk_prepare)
   * [SDK集成](/ZH/Unity3D/sdk_integration)
