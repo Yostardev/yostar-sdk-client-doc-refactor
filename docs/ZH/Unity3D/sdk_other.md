@@ -122,7 +122,7 @@
     ```
 
 ### 8、查询错误码释义
-\* 调用该接口，可同步查询;
+\* 游戏收到SDK回调后，可根据ResultCode的值调用本接口来查询对应的错误解释，并弹窗给用户提示；
 
 - #### 函数定义
     ```cs
@@ -131,12 +131,11 @@
 
 - #### 调用示例
     ```cs
-    string result = YoStarSDK.Instance.QueryErrorMsg(errorCode);
+    string result = YoStarSDK.Instance.QueryErrorMsg(100404);
     ```
 
 ### 9、问卷调查
 \* 调用该接口，跳转到问卷调查界面;
-
 
 - #### 函数定义
     ```cs
