@@ -121,16 +121,36 @@
     YoStarSDK.Instance.RequestStoreReview();
     ```
 
-### 8、检测设备是否支持苹果登录
-\* 调用该接口，可同步检查本机是否支持苹果登录;
+### 8、查询错误码释义
+\* 调用该接口，可同步查询;
 
 - #### 函数定义
     ```cs
-    public bool AppleSignInAvailable()
+    public string queryErrorMsg(int errorCode)
     ```
 
 - #### 调用示例
     ```cs
-    bool isAvailable = YoStarSDK.Instance.AppleSignInAvailable();
+    string result = YoStarSDK.Instance.QueryErrorMsg(errorCode);
+    ```
+
+### 9、问卷调查
+\* 调用该接口，跳转到问卷调查界面;
+
+
+- #### 函数定义
+    ```cs
+    public void ShowSurvey(string activityID,string gameUID);
+    ```
+
+    入参名称|类型|入参说明|备注
+    ---|---|---|---|
+    activityID|string| 问卷id|无 |
+    gameUID|string| 游戏的uid |无|
+
+
+- #### 调用示例
+    ```cs
+    YoStarSDK.Instance.ShowSurvey("123,"uid10000");
     ```
 
