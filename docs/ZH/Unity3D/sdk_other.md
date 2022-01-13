@@ -139,17 +139,18 @@
 
 - #### 函数定义
     ```cs
-    public void ShowSurvey(string activityID,string gameUID);
+    public ResultCode ShowSurvey(string activityID,string gameUID);
     ```
 
     入参名称|类型|入参说明|备注
     ---|---|---|---|
-    activityID|string| 问卷id|无 |
-    gameUID|string| 游戏的uid |无|
+    activityID|string| 问卷id|必传 |
+    gameUID|string| 游戏的uid |必传|
 
 
 - #### 调用示例
     ```cs
-    YoStarSDK.Instance.ShowSurvey("123,"uid10000");
+    ResultCode result = YoStarSDK.Instance.ShowSurvey("123,"uid10000");
+
     ```
 

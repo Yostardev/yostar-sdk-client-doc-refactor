@@ -7,8 +7,14 @@
 - #### 函数定义
 
   ```cs
-    public bool Init()
+    public bool Init(Envs environment, PayStore payStore)
   ```
+
+    入参名称|类型|入参说明|备注
+    ---|:--:|:--:|:--|
+    environment|Envs|sdk出包服环境|test、release|
+    payStore|PayStore|出包渠道|googleplay、appstore、onestore|
+
 
 <br/>
 
@@ -26,7 +32,7 @@
 
       YoStarSDKEvent.Instance.InitEvent += OnInitResponse;
 
-      YoStarSDK.Instance.Init();
+      YoStarSDK.Instance.Init(Envs.test, PayStore.appstore);
   ```
 
     InitRet 属性名|类型|参数说明|备注
